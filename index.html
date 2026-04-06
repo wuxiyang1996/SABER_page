@@ -3,24 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="SABER: A Stealthy Agentic Black-Box Attack Framework for Vision-Language-Action Models">
+  <meta name="keywords" content="SABER, VLA, adversarial attack, robotics, red-teaming, GRPO, ReAct">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'G-PYVRSFMDRL');
-  </script>
+  <title>SABER: A Stealthy Agentic Black-Box Attack Framework for Vision-Language-Action Models</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -32,7 +18,6 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -42,85 +27,38 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</nav>
-
-
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
+          <h1 class="title is-1 publication-title">SABER: A Stealthy Agentic Black-Box Attack Framework for Vision-Language-Action Models</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
+              <a href="https://wuxiyang1996.github.io/">Xiyang Wu</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
+              <a href="https://guangyaoshi.github.io/">Guangyao Shi</a><sup>2</sup>,</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
-            </span>
+              Qingzi Wang<sup>1</sup>,</span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
-            </span>
+              <a href="https://zli12321.github.io/">Zongxia Li</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
-            </span>
+              <a href="https://sites.google.com/view/amritsinghbedi/home">Amrit Singh Bedi</a><sup>3</sup>,</span>
             <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
+              <a href="https://www.cs.umd.edu/people/dmanocha">Dinesh Manocha</a><sup>1</sup>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
+            <span class="author-block"><sup>1</sup>University of Maryland, College Park,</span>
+            <span class="author-block"><sup>2</sup>University of Southern California,</span>
+            <span class="author-block"><sup>3</sup>University of Central Florida</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
+                <a href="https://arxiv.org/pdf/2603.24935"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -129,7 +67,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
+                <a href="https://arxiv.org/abs/2603.24935"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -137,37 +75,16 @@
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/google/nerfies"
+                <a href="https://github.com/wuxiyang1996/SABER"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
                   <span>Code</span>
-                  </a>
+                </a>
               </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
             </div>
-
           </div>
         </div>
       </div>
@@ -175,280 +92,391 @@
   </div>
 </section>
 
+<!-- Teaser Figure -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
+      <img src="./static/images/teaser.png" alt="SABER teaser figure" style="width:100%; border-radius:10px;">
+      <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
+        <span class="saber">SABER</span> applies stealthy, bounded instruction perturbations through a ReAct-style tool-calling agent to induce targeted behavioral degradation in VLA-driven robots, including task failure, action inflation, and constraint violations.
       </h2>
     </div>
   </div>
 </section>
 
 
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
+    <!-- Abstract -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            Vision-language-action (VLA) models enable robots to follow natural-language instructions grounded in visual observations, but the instruction channel also introduces a critical vulnerability: small textual perturbations can alter downstream robot behavior. Systematic robustness evaluation therefore requires a black-box attacker that can generate minimal yet effective instruction edits across diverse VLA models.
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            To this end, we present <strong>SABER</strong>, an agent-centric approach for automatically generating instruction-based adversarial attacks on VLA models under bounded edit budgets. SABER uses a GRPO-trained ReAct attacker to generate small, plausible adversarial instruction edits using character-, token-, and prompt-level tools under a bounded edit budget that induces targeted behavioral degradation, including task failure, unnecessarily long execution, and increased constraint violations.
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            On the LIBERO benchmark across six state-of-the-art VLA models, SABER reduces task success by <strong>20.6%</strong>, increases action-sequence length by <strong>55%</strong>, and raises constraint violations by <strong>33%</strong>, while requiring <strong>21.1% fewer tool calls</strong> and <strong>54.7% fewer character edits</strong> than strong GPT-based baselines. These results show that small, plausible instruction edits are sufficient to substantially degrade robot execution, and that an agentic black-box pipeline offers a practical, scalable, and adaptive approach for red-teaming robotic foundation models.
           </p>
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <!--/ Paper video. -->
   </div>
 </section>
 
 
+<!-- Pipeline Overview -->
+<section class="section" style="background-color: #f5f5f5;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Method Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+            For each LIBERO task, we maintain two contrastive rollouts under a frozen target VLA. A clean baseline rollout is first executed and cached as reference. For the attack rollout, the instruction is passed to a <strong>red-team agent</strong>, which uses an LLM backbone to reason over the instruction and available tools, then performs multi-turn <code>FIND</code>&rarr;<code>APPLY</code> edits in a ReAct-style loop. The <strong>perturbation toolbox</strong> returns edited instructions from target positions and local context. The target VLA then executes the perturbed instruction to produce the attack rollout. The <strong>reward function</strong> compares the clean and attack rollouts, together with the agent's tool-use traces, to compute rewards from task outcome, action inflation, constraint violations, and stealth signals.
+          </p>
+        </div>
+        <img src="./static/images/pipeline.png" alt="SABER pipeline overview" style="width:100%; border-radius:10px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Tool Families -->
 <section class="section">
   <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
+        <h2 class="title is-3 has-text-centered">Perturbation Tool Families</h2>
         <div class="content has-text-justified">
           <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
+            SABER models adversarial instruction generation as multi-turn tool use over three complementary perturbation families, each following a two-stage <code>FIND</code>&rarr;<code>APPLY</code> protocol:
           </p>
         </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
+        <div class="columns is-multiline">
+          <div class="column is-one-third">
+            <div class="box" style="height:100%;">
+              <h4 class="title is-5 has-text-centered"><i class="fas fa-font"></i>&ensp;Token-Level</h4>
+              <p>Edit words or subwords. <code>FIND</code> returns a tokenized sequence and a brief prompt for selecting the target token and edit type (replace, remove, add, or attribute swap); <code>APPLY</code> performs the edit using token index(es) and replacement text.</p>
             </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
           </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
+          <div class="column is-one-third">
+            <div class="box" style="height:100%;">
+              <h4 class="title is-5 has-text-centered"><i class="fas fa-keyboard"></i>&ensp;Character-Level</h4>
+              <p>Apply typo-style edits within a word (insertion, deletion, substitution, transposition, case flip). Captures subword and OCR-like perturbations, e.g. <code>pick</code>&rarr;<code>plck</code>, or <code>mug</code>&rarr;<code>rnug</code>.</p>
+            </div>
           </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
-
-      </div>
-    </div>
-    <!--/ Animation. -->
-
-
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
+          <div class="column is-one-third">
+            <div class="box" style="height:100%;">
+              <h4 class="title is-5 has-text-centered"><i class="fas fa-paragraph"></i>&ensp;Prompt-Level</h4>
+              <p>Inject clauses or sentences, such as verification wraps, decomposition steps, uncertainty clauses, extra constraints, or objective injections. <code>APPLY</code> inserts the clause under a maximum added-token budget.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!--/ Concurrent Work. -->
-
   </div>
 </section>
 
 
+<!-- Training Procedure -->
+<section class="section" style="background-color: #f5f5f5;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Two-Stage Training Procedure</h2>
+        <div class="content has-text-justified">
+          <p>
+            We cold-start by caching clean baseline rollouts from target VLAs and collecting initial attack trajectories with a frozen red-team agent via lightweight random exploration over tool-calling chains. These rollouts form the cold-start dataset for <strong>SFT</strong> before <strong>GRPO</strong> training. We then perform agentic RL in interactive scenarios, where the red-team agent attacks target VLAs through tool calling and learns from reward feedback computed by comparing clean and attack rollouts, together with the agent's tool-use traces, under different attack objectives.
+          </p>
+        </div>
+        <img src="./static/images/train.png" alt="SABER two-stage training" style="width:100%; border-radius:10px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Key Highlights -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Key Highlights</h2>
+    <div class="columns is-multiline">
+      <div class="column is-3">
+        <div class="has-text-centered">
+          <p class="title is-1 has-text-danger">20.6%</p>
+          <p class="subtitle is-5">Task Success Reduction</p>
+        </div>
+      </div>
+      <div class="column is-3">
+        <div class="has-text-centered">
+          <p class="title is-1 has-text-warning-dark">55%</p>
+          <p class="subtitle is-5">Action Sequence Inflation</p>
+        </div>
+      </div>
+      <div class="column is-3">
+        <div class="has-text-centered">
+          <p class="title is-1 has-text-info">33%</p>
+          <p class="subtitle is-5">Constraint Violation Increase</p>
+        </div>
+      </div>
+      <div class="column is-3">
+        <div class="has-text-centered">
+          <p class="title is-1 has-text-success">54.7%</p>
+          <p class="subtitle is-5">Fewer Character Edits</p>
+        </div>
+      </div>
+    </div>
+    <div class="content has-text-justified" style="margin-top:1rem;">
+      <p>
+        Evaluated on the <strong>LIBERO</strong> manipulation benchmark across <strong>six</strong> state-of-the-art VLA models:
+        &pi;<sub>0</sub>-LIBERO, &pi;<sub>0.5</sub>, GR00T-N1.5, X-VLA, InternVLA-M1, and DeepThinkVLA.
+        SABER achieves stronger behavior-level attacks at lower cost than GPT-based baselines, requiring <strong>21.1% fewer tool calls</strong> and <strong>54.7% fewer character edits</strong>.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Results Tables -->
+<section class="section" style="background-color: #f5f5f5;">
+  <div class="container is-max-widescreen">
+    <h2 class="title is-3 has-text-centered">Experimental Results</h2>
+
+    <!-- Task Failure Table -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h3 class="title is-4">Task Failure (ASR)</h3>
+        <p class="content">Attack success rate for <em>task failure</em>, computed as Base TER &minus; Attack TER (%).</p>
+        <div class="table-container">
+          <table class="table is-bordered is-striped is-hoverable is-fullwidth results-table">
+            <thead>
+              <tr>
+                <th rowspan="2">Victim VLA</th>
+                <th colspan="3" class="has-text-centered">LIBERO-Spatial</th>
+                <th colspan="3" class="has-text-centered">LIBERO-Object</th>
+                <th colspan="3" class="has-text-centered">LIBERO-Goal</th>
+                <th colspan="3" class="has-text-centered">LIBERO-Long</th>
+                <th colspan="3" class="has-text-centered">Overall</th>
+              </tr>
+              <tr>
+                <th>Base TER&uarr;</th><th>Atk TER&darr;</th><th>ASR&uarr;</th>
+                <th>Base TER&uarr;</th><th>Atk TER&darr;</th><th>ASR&uarr;</th>
+                <th>Base TER&uarr;</th><th>Atk TER&darr;</th><th>ASR&uarr;</th>
+                <th>Base TER&uarr;</th><th>Atk TER&darr;</th><th>ASR&uarr;</th>
+                <th>Base TER&uarr;</th><th>Atk TER&darr;</th><th>ASR&uarr;</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>&pi;<sub>0</sub>-LIBERO</td><td>100.0</td><td>86.7</td><td>13.3</td><td>100.0</td><td>80.0</td><td>20.0</td><td>100.0</td><td>53.3</td><td>46.7</td><td>66.7</td><td>40.0</td><td>26.7</td><td>91.7</td><td>65.0</td><td class="has-text-weight-bold">26.7</td></tr>
+              <tr><td>&pi;<sub>0.5</sub></td><td>100.0</td><td>93.3</td><td>6.7</td><td>93.3</td><td>93.3</td><td>0.0</td><td>100.0</td><td>53.3</td><td>46.7</td><td>93.3</td><td>80.0</td><td>13.3</td><td>96.7</td><td>80.0</td><td class="has-text-weight-bold">16.7</td></tr>
+              <tr><td>GR00T-N1.5</td><td>100.0</td><td>93.3</td><td>6.7</td><td>100.0</td><td>100.0</td><td>0.0</td><td>100.0</td><td>53.3</td><td>46.7</td><td>93.3</td><td>86.7</td><td>6.6</td><td>98.3</td><td>83.3</td><td class="has-text-weight-bold">15.0</td></tr>
+              <tr><td>X-VLA</td><td>93.3</td><td>80.0</td><td>13.3</td><td>93.3</td><td>73.3</td><td>20.0</td><td>100.0</td><td>66.7</td><td>33.3</td><td>60.0</td><td>46.7</td><td>13.3</td><td>86.7</td><td>66.7</td><td class="has-text-weight-bold">20.0</td></tr>
+              <tr class="has-background-light"><td colspan="16"></td></tr>
+              <tr><td>InternVLA-M1</td><td>93.3</td><td>86.7</td><td>6.6</td><td>100.0</td><td>93.3</td><td>6.7</td><td>100.0</td><td>46.7</td><td>53.3</td><td>86.7</td><td>73.3</td><td>13.4</td><td>95.0</td><td>75.0</td><td class="has-text-weight-bold">20.0</td></tr>
+              <tr><td>DeepThinkVLA</td><td>86.7</td><td>80.0</td><td>6.7</td><td>100.0</td><td>93.3</td><td>6.7</td><td>100.0</td><td>33.3</td><td>66.7</td><td>93.3</td><td>73.3</td><td>20.0</td><td>95.0</td><td>70.0</td><td class="has-text-weight-bold">25.0</td></tr>
+              <tr class="has-text-weight-bold has-background-white-ter"><td>Average</td><td>95.6</td><td>86.7</td><td>8.9</td><td>97.8</td><td>88.9</td><td>8.9</td><td>100.0</td><td>51.1</td><td>48.9</td><td>82.2</td><td>66.7</td><td>15.5</td><td>93.9</td><td>73.3</td><td>20.6</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Action Inflation Table -->
+    <div class="columns is-centered" style="margin-top:2rem;">
+      <div class="column is-full-width">
+        <h3 class="title is-4">Action Inflation (AIR)</h3>
+        <p class="content">Action inflation ratio &Delta;|a| = |a<sub>attack</sub>| / |a<sub>base</sub>|.</p>
+        <div class="table-container">
+          <table class="table is-bordered is-striped is-hoverable is-fullwidth results-table">
+            <thead>
+              <tr>
+                <th rowspan="2">Victim VLA</th>
+                <th colspan="3" class="has-text-centered">LIBERO-Spatial</th>
+                <th colspan="3" class="has-text-centered">LIBERO-Object</th>
+                <th colspan="3" class="has-text-centered">LIBERO-Goal</th>
+                <th colspan="3" class="has-text-centered">LIBERO-Long</th>
+                <th colspan="3" class="has-text-centered">Overall</th>
+              </tr>
+              <tr>
+                <th>Base |a|</th><th>Atk |a|</th><th>AIR&uarr;</th>
+                <th>Base |a|</th><th>Atk |a|</th><th>AIR&uarr;</th>
+                <th>Base |a|</th><th>Atk |a|</th><th>AIR&uarr;</th>
+                <th>Base |a|</th><th>Atk |a|</th><th>AIR&uarr;</th>
+                <th>Base |a|</th><th>Atk |a|</th><th>AIR&uarr;</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>&pi;<sub>0</sub>-LIBERO</td><td>119.3</td><td>220.7</td><td>1.85</td><td>139.2</td><td>233.9</td><td>1.68</td><td>101.3</td><td>230.0</td><td>2.27</td><td>363.0</td><td>457.4</td><td>1.26</td><td>180.7</td><td>285.5</td><td class="has-text-weight-bold">1.58</td></tr>
+              <tr><td>&pi;<sub>0.5</sub></td><td>112.2</td><td>173.9</td><td>1.55</td><td>151.1</td><td>226.7</td><td>1.50</td><td>105.1</td><td>196.5</td><td>1.87</td><td>346.5</td><td>391.5</td><td>1.13</td><td>178.7</td><td>247.2</td><td class="has-text-weight-bold">1.38</td></tr>
+              <tr><td>GR00T-N1.5</td><td>133.7</td><td>514.7</td><td>3.85</td><td>129.7</td><td>220.5</td><td>1.70</td><td>98.3</td><td>378.5</td><td>3.85</td><td>343.5</td><td>346.9</td><td>1.01</td><td>176.3</td><td>365.2</td><td class="has-text-weight-bold">2.07</td></tr>
+              <tr><td>X-VLA</td><td>157.8</td><td>189.4</td><td>1.20</td><td>189.7</td><td>187.8</td><td>0.99</td><td>126.5</td><td>261.9</td><td>2.07</td><td>431.3</td><td>504.6</td><td>1.17</td><td>226.3</td><td>285.9</td><td class="has-text-weight-bold">1.26</td></tr>
+              <tr class="has-background-light"><td colspan="16"></td></tr>
+              <tr><td>InternVLA-M1</td><td>114.3</td><td>192.0</td><td>1.68</td><td>143.8</td><td>204.2</td><td>1.42</td><td>95.1</td><td>255.8</td><td>2.69</td><td>320.9</td><td>327.3</td><td>1.02</td><td>168.5</td><td>244.8</td><td class="has-text-weight-bold">1.45</td></tr>
+              <tr><td>DeepThinkVLA</td><td>125.0</td><td>197.5</td><td>1.58</td><td>137.4</td><td>186.9</td><td>1.36</td><td>98.1</td><td>255.1</td><td>2.60</td><td>326.3</td><td>421.9</td><td>1.29</td><td>171.7</td><td>265.4</td><td class="has-text-weight-bold">1.55</td></tr>
+              <tr class="has-text-weight-bold has-background-white-ter"><td>Average</td><td>127.0</td><td>248.0</td><td>1.95</td><td>148.5</td><td>210.0</td><td>1.44</td><td>104.1</td><td>263.0</td><td>2.56</td><td>355.2</td><td>408.3</td><td>1.15</td><td>183.7</td><td>282.3</td><td>1.55</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Constraint Violation Table -->
+    <div class="columns is-centered" style="margin-top:2rem;">
+      <div class="column is-full-width">
+        <h3 class="title is-4">Constraint Violation (CVI)</h3>
+        <p class="content">Constraint violation inflation &Delta;CV = CV<sub>attack</sub> / CV<sub>base</sub>.</p>
+        <div class="table-container">
+          <table class="table is-bordered is-striped is-hoverable is-fullwidth results-table">
+            <thead>
+              <tr>
+                <th rowspan="2">Victim VLA</th>
+                <th colspan="3" class="has-text-centered">LIBERO-Spatial</th>
+                <th colspan="3" class="has-text-centered">LIBERO-Object</th>
+                <th colspan="3" class="has-text-centered">LIBERO-Goal</th>
+                <th colspan="3" class="has-text-centered">LIBERO-Long</th>
+                <th colspan="3" class="has-text-centered">Overall</th>
+              </tr>
+              <tr>
+                <th>Base CV</th><th>Atk CV</th><th>CVI&uarr;</th>
+                <th>Base CV</th><th>Atk CV</th><th>CVI&uarr;</th>
+                <th>Base CV</th><th>Atk CV</th><th>CVI&uarr;</th>
+                <th>Base CV</th><th>Atk CV</th><th>CVI&uarr;</th>
+                <th>Base CV</th><th>Atk CV</th><th>CVI&uarr;</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>&pi;<sub>0</sub>-LIBERO</td><td>550.7</td><td>326.2</td><td>0.59</td><td>711.5</td><td>838.3</td><td>1.18</td><td>309.6</td><td>624.5</td><td>2.02</td><td>1039.6</td><td>1269.1</td><td>1.22</td><td>652.9</td><td>764.5</td><td class="has-text-weight-bold">1.17</td></tr>
+              <tr><td>&pi;<sub>0.5</sub></td><td>570.9</td><td>549.8</td><td>0.96</td><td>681.4</td><td>699.0</td><td>1.03</td><td>260.3</td><td>439.1</td><td>1.69</td><td>863.9</td><td>1336.2</td><td>1.55</td><td>594.1</td><td>756.0</td><td class="has-text-weight-bold">1.27</td></tr>
+              <tr><td>GR00T-N1.5</td><td>599.9</td><td>702.7</td><td>1.17</td><td>644.1</td><td>595.7</td><td>0.92</td><td>258.9</td><td>862.3</td><td>3.33</td><td>918.8</td><td>778.1</td><td>0.85</td><td>605.4</td><td>734.7</td><td class="has-text-weight-bold">1.21</td></tr>
+              <tr><td>X-VLA</td><td>838.3</td><td>1356.3</td><td>1.62</td><td>828.3</td><td>725.7</td><td>0.88</td><td>347.1</td><td>885.0</td><td>2.55</td><td>1145.3</td><td>1171.0</td><td>1.02</td><td>789.8</td><td>1034.5</td><td class="has-text-weight-bold">1.31</td></tr>
+              <tr class="has-background-light"><td colspan="16"></td></tr>
+              <tr><td>InternVLA-M1</td><td>475.9</td><td>130.3</td><td>0.27</td><td>639.3</td><td>493.0</td><td>0.77</td><td>232.9</td><td>495.3</td><td>2.13</td><td>681.9</td><td>1550.3</td><td>2.27</td><td>507.5</td><td>667.2</td><td class="has-text-weight-bold">1.31</td></tr>
+              <tr><td>DeepThinkVLA</td><td>572.4</td><td>759.7</td><td>1.33</td><td>607.9</td><td>729.0</td><td>1.20</td><td>220.2</td><td>915.7</td><td>4.16</td><td>827.1</td><td>1509.7</td><td>1.83</td><td>556.9</td><td>978.5</td><td class="has-text-weight-bold">1.76</td></tr>
+              <tr class="has-text-weight-bold has-background-white-ter"><td>Average</td><td>601.4</td><td>637.5</td><td>1.06</td><td>685.4</td><td>680.1</td><td>0.99</td><td>271.5</td><td>703.7</td><td>2.59</td><td>912.8</td><td>1269.1</td><td>1.39</td><td>617.8</td><td>822.6</td><td>1.33</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Comparison & Ablation -->
+<section class="section">
+  <div class="container is-max-widescreen">
+    <h2 class="title is-3 has-text-centered">Comparison and Ablation</h2>
+    <div class="content has-text-justified" style="max-width:960px; margin:0 auto;">
+      <p>
+        Compared with a frozen GPT-5 mini attacker using the same tool-calling interface, SABER achieves consistent gains on objective-aligned metrics while being substantially more efficient and stealthy. RL training not only improves attack effectiveness, but also learns higher-leverage perturbation strategies.
+      </p>
+    </div>
+
+    <div class="side-by-side-tables" style="display:flex; flex-wrap:wrap; justify-content:center; align-items:flex-start; gap:2.5rem; margin-top:1.5rem;">
+      <div style="flex:0 0 auto;">
+        <h4 class="title is-5 has-text-centered">SABER vs. GPT-5 mini</h4>
+        <table class="table is-bordered is-hoverable results-table" style="width:auto;">
+          <thead>
+            <tr>
+              <th>Method</th>
+              <th>Tool Calls&darr;</th>
+              <th>Char Edits&darr;</th>
+              <th>ASR&uarr;</th>
+              <th>AIR&uarr;</th>
+              <th>CVI&uarr;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>GPT-5 mini</td><td>3.93</td><td>168.8</td><td>14.5</td><td>1.37</td><td>1.25</td></tr>
+            <tr class="has-text-weight-bold"><td>SABER</td><td>3.10</td><td>76.46</td><td>16.7</td><td>1.38</td><td>1.27</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="flex:0 0 auto;">
+        <h4 class="title is-5 has-text-centered">Cold-Start Ablation</h4>
+        <table class="table is-bordered is-hoverable results-table" style="width:auto;">
+          <thead>
+            <tr>
+              <th>Training</th>
+              <th>Tool Calls&darr;</th>
+              <th>Char Edits&darr;</th>
+              <th>Base TER</th>
+              <th>Atk TER</th>
+              <th>ASR&uarr;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>GRPO Only</td><td>2.76</td><td>11.78</td><td>96.7</td><td>88.0</td><td>8.7</td></tr>
+            <tr class="has-text-weight-bold"><td>SFT + GRPO</td><td>3.10</td><td>76.46</td><td>96.7</td><td>80.0</td><td>16.7</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Tool Usage -->
+    <div style="margin-top:2.5rem; text-align:center;">
+      <h4 class="title is-5 has-text-centered">Tool Usage by Objective</h4>
+      <p class="content has-text-centered" style="font-size:0.9rem;">Mean tool calls and character edits per episode across LIBERO suites.</p>
+      <div class="table-container" style="display:inline-block; text-align:left;">
+        <table class="table is-bordered is-striped is-hoverable results-table" style="width:auto;">
+            <thead>
+              <tr>
+                <th rowspan="2">Objective</th>
+                <th colspan="2" class="has-text-centered">Spatial</th>
+                <th colspan="2" class="has-text-centered">Object</th>
+                <th colspan="2" class="has-text-centered">Goal</th>
+                <th colspan="2" class="has-text-centered">Long</th>
+                <th colspan="2" class="has-text-centered">Overall</th>
+              </tr>
+              <tr>
+                <th>Calls</th><th>Edits</th>
+                <th>Calls</th><th>Edits</th>
+                <th>Calls</th><th>Edits</th>
+                <th>Calls</th><th>Edits</th>
+                <th>Calls</th><th>Edits</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Task Failure</td><td>2.97</td><td>13.4</td><td>3.34</td><td>13.2</td><td>2.80</td><td>10.3</td><td>2.97</td><td>15.1</td><td class="has-text-weight-bold">3.02</td><td class="has-text-weight-bold">13.0</td></tr>
+              <tr><td>Action Inflation</td><td>2.98</td><td>126.7</td><td>3.26</td><td>114.0</td><td>3.36</td><td>130.3</td><td>3.05</td><td>117.3</td><td class="has-text-weight-bold">3.16</td><td class="has-text-weight-bold">122.1</td></tr>
+              <tr><td>Constraint Violation</td><td>3.34</td><td>89.3</td><td>2.34</td><td>65.0</td><td>1.67</td><td>50.0</td><td>2.34</td><td>51.7</td><td class="has-text-weight-bold">2.42</td><td class="has-text-weight-bold">64.0</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- Contributions -->
+<section class="section" style="background-color: #f5f5f5;">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Contributions</h2>
+    <div class="content">
+      <ol>
+        <li><strong>Problem formulation:</strong> We identify the need for a general-purpose automated attacker for VLA systems and formulate instruction-only black-box attacks as a constrained optimization problem over robot behavioral objectives under bounded edit budgets.</li>
+        <li><strong>Agentic attack methodology:</strong> We propose SABER, where a single GRPO-trained ReAct agent adaptively composes character-, token-, and prompt-level perturbations without gradient access to the target model or model-specific redesign.</li>
+        <li><strong>Comprehensive evaluation:</strong> We evaluate on the LIBERO manipulation benchmark across six state-of-the-art VLA models and three attack objectives, showing average degradation of 20.6% in task success, a 55% increase in action-sequence length, and a 33% increase in constraint violations.</li>
+        <li><strong>Efficiency over baselines:</strong> Compared with GPT-5 mini baselines, SABER achieves stronger behavior-level attacks at lower cost, requiring 21.1% fewer tool calls and 54.7% fewer character edits.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+
+<!-- BibTeX -->
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+    <pre><code>@article{wu2026saber,
+  title={SABER: A Stealthy Agentic Black-Box Attack Framework for Vision-Language-Action Models},
+  author={Wu, Xiyang and Shi, Guangyao and Wang, Qingzi and Li, Zongxia and Bedi, Amrit Singh and Manocha, Dinesh},
+  journal={arXiv preprint arXiv:2603.24935},
+  year={2026}
 }</code></pre>
   </div>
 </section>
@@ -457,11 +485,10 @@
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
+      <a class="icon-link" href="https://arxiv.org/pdf/2603.24935">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/wuxiyang1996/SABER" class="external-link">
         <i class="fab fa-github"></i>
       </a>
     </div>
@@ -474,11 +501,7 @@
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
           <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            Website template borrowed from the <a href="https://nerfies.github.io">Nerfies</a> project page.
           </p>
         </div>
       </div>
